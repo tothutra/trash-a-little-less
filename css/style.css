@@ -1,0 +1,79 @@
+body {
+  display:  flex;
+  font-family: 'Fauna One', serif;
+  line-height:  1.5;
+  color: #000;
+}
+/*Fonts*/
+.header-font {
+  font-family: 'Playfair Display', serif;
+}
+.body-font {
+  font-family: 'Work Sans', serif;
+}
+/*color*/
+
+.bg-blush {
+  background-color: #f2cbbc;
+}
+.bg-moss {
+  background-color: #334431;
+}
+.bg-lightgrey {
+  background-color: #ececec;
+}
+.bg-mustard {
+  background-color: #FED250;
+}
+.bg-brick {
+  background-color: #f78888;
+}
+.bg-sky {
+  background-color: #90ccf4;
+}
+.bg-sea {
+  background-color: #5da2d5;
+}
+#sidebar {
+  width: 10vw;
+}
+#middle-section {
+  width: 40vw;
+  margin: auto;
+}
+#middle-section h1 {
+  margin-top: 0;
+}
+#main-section {
+  width: 50vw;
+  overflow-y: auto;
+}
+.action {
+  width: 100%;
+  height: 25vh;
+}
+.action-content {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  transition: all 0.7s ease;
+}
+.read-more {
+  transform: translateY(30px);
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+.action:hover .action-content {
+  border: solid 1px #000;
+}
+
+.action:hover .read-more {
+  transform: translateY(10px);
+  opacity: 1;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
