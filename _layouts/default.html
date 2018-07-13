@@ -4,13 +4,20 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Airspace A template by Themefisher</title>
+    <title>
+      {% if page.title %}
+        {{page.title}}
+      {% else %}
+        Trash a little less
+      {% endif %}
+    </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tachyons.min.css">
@@ -21,132 +28,7 @@
     <script src="js/main.js"></script>
   </head>
   <body>
-    <div id="sidebar" class="vh-100-ns pa4 flex flex-column justify-between">
-    	<div>
-        <div class="f1 logo">
-          🌈
-        </div>
-        <nav>
-          <ul>
-            <li>Why?</li>
-            <li>About</li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <p>
-          <small>Made by Tra To</small>
-        </p>
-      </div>
-    </div>
-
-    <section id="middle-section" class="vh-100-ns pa4 flex flex-column">
-      <div class="header-font">
-        <h2 class="f3">Small ways to</h2>
-        <h1 class="f1">trash a little less</h1>
-      </div>
-
-      <div></div>
-      <p class="body-font f5">
-        Fast, easy, do one or do all, however you can adapt
-      </p>
-    </section>
-
-    <section id="main-section" class="vh-100-ns tc">
-    	<ul class="actions">
-        <li class="action bg-mustard relative">
-          <a href="/post" class="link black">
-            <div class="action-content absolute flex flex-column justify-center">
-              <h2 class="header-font f2">Use fancy straws</h2>
-              <p class="body-font f5 lh-copy">Fast, easy, do one or do all, however you can adapt</p>
-              <div class="read-more i">
-                <p class="body-font f6">Read more</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="action bg-sky relative">
-        	<a href="/post" class="link black">
-            <div class="action-content absolute flex flex-column justify-center">
-              <h2 class="header-font f2">Use fancy straws</h2>
-              <p class="body-font f5 lh-copy">Fast, easy, do one or do all, however you can adapt</p>
-              <div class="read-more i">
-                <p class="body-font f6">Read more</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="action bg-brick relative">
-        	<a href="/post" class="link black">
-            <div class="action-content absolute flex flex-column justify-center">
-              <h2 class="header-font f2">Use fancy straws</h2>
-              <p class="body-font f5 lh-copy">Fast, easy, do one or do all, however you can adapt</p>
-              <div class="read-more i">
-                <p class="body-font f6">Read more</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="action bg-sea relative">
-        	<a href="/post" class="link black">
-            <div class="action-content absolute flex flex-column justify-center">
-              <h2 class="header-font f2">Use fancy straws</h2>
-              <p class="body-font f5 lh-copy">Fast, easy, do one or do all, however you can adapt</p>
-              <div class="read-more i">
-                <p class="body-font f6">Read more</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="action bg-mustard relative">
-        	<a href="/post" class="link black">
-            <div class="action-content absolute flex flex-column justify-center">
-              <h2 class="header-font f2">Use fancy straws</h2>
-              <p class="body-font f5 lh-copy">Fast, easy, do one or do all, however you can adapt</p>
-              <div class="read-more i">
-                <p class="body-font f6">Read more</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="action bg-sky relative">
-        	<a href="/post" class="link black">
-            <div class="action-content absolute flex flex-column justify-center">
-              <h2 class="header-font f2">Use fancy straws</h2>
-              <p class="body-font f5 lh-copy">Fast, easy, do one or do all, however you can adapt</p>
-              <div class="read-more i">
-                <p class="body-font f6">Read more</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="action bg-brick relative">
-        	<a href="/post" class="link black">
-            <div class="action-content absolute flex flex-column justify-center">
-              <h2 class="header-font f2">Use fancy straws</h2>
-              <p class="body-font f5 lh-copy">Fast, easy, do one or do all, however you can adapt</p>
-              <div class="read-more i">
-                <p class="body-font f6">Read more</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="action bg-sea relative">
-        	<a href="/post" class="link black">
-            <div class="action-content absolute flex flex-column justify-center">
-              <h2 class="header-font f2">Use fancy straws</h2>
-              <p class="body-font f5 lh-copy">Fast, easy, do one or do all, however you can adapt</p>
-              <div class="read-more i">
-                <p class="body-font f6">Read more</p>
-              </div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Fauna+One|Work+Sans');
-    </style>
+    {% include navigation.html %}
+    {{content}}
   </body>
 </html>

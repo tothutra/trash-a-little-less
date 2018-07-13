@@ -1,0 +1,17 @@
+<section id="main-section" class="vh-100-ns tc">
+  <ul class="actions">
+    {% for post in site.posts %}
+      <li class="action bg-mustard relative">
+        <a href="/post" class="link black">
+          <div class="action-content absolute flex flex-column justify-center">
+            <h2 class="header-font f2">{{ post.title }}</h2>
+            <p class="body-font f5 lh-copy">{{ post.subtitle }}</p>
+            <div class="read-more i">
+              <p class="body-font f6">Read more</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

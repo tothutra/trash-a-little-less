@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+subtitle: "Fast, easy, do one or do all, however you can adapt"
 date:   2018-07-06 23:25:53 -0400
 categories: jekyll update
 ---
