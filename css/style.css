@@ -73,6 +73,17 @@ body {
   opacity: 1;
 }
 
+.sidebar {
+  width: 20vw;
+}
+.sidebar-toggle {
+  transform: translateX(-100%);
+  transition: all 0.7s;
+}
+.sidebar.is-closed {
+  transform: translateX(100%);
+}
+
 ul, h1, h2, p {
   margin: 0;
 }
